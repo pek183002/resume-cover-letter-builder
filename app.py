@@ -8,7 +8,7 @@ import re
 api_key = st.secrets["GOOGLE_API_KEY"]
 genai.configure(api_key=api_key)
 # genai.configure(api_key="YOUR_GEMINI_API_KEY")
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel('gemini-2.5-flash')
 
 def get_match_score(resume, jd):
     prompt = f"""
