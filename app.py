@@ -35,7 +35,7 @@ def create_pdf(content, title):
     pdf.set_font("Arial", size=11)
     # Standardizing text for PDF encoding
     pdf.multi_cell(0, 10, txt=content.encode('latin-1', 'replace').decode('latin-1'))
-    return pdf.output()
+    return pdf.output(dest='S')
 
 # 3. Streamlit Interface
 st.set_page_config(page_title="Ultimate ATS Suite", layout="wide")
